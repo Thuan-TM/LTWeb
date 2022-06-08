@@ -1,0 +1,48 @@
+body {
+    background-color: aliceblue;
+}
+
+.Formmain {
+    height: 50%;
+    width: 100%;
+    /* flex: 3; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.Form1 {
+    align-items: center;
+    background-color: aquamarine;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    border-radius: 50px;
+    
+}
+
+.center{
+    padding: 50px 0;
+    
+}
+
+.Form2 {
+
+    background-color: aquamarine;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+}
+
+.Form3 {
+    background-color: aquamarine;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    border-radius: 50px;
+}
