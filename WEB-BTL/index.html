@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaif's Cuisine</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="row header">
+        <div class="col-md-4">
+          <span class="row"
+            ><img
+              src="./img/icon/logo.svg"
+              class="col-md-5 col-lg-4 col-3"
+              alt=""
+          /></span>
+        </div>
+        <div class="col-md-8 text_popin nav_list" style="--fonz: 1.8rem">
+          <div class="row d-none d-md-block nav">
+            <a href="" class="col-md nav_items">Home</a>
+            <a href="" class="col-md nav_items">Menu</a>
+            <a href="" class="col-md nav_items">About</a>
+            <a href="" class="col-md nav_items">Contact</a>
+            <a href="" class="col-md nav_items btn_">Book Table</a>
+          </div>
+        </div>
+      </div>
+      <!-- end header -->
+      <section id="page_title" data-aos="fade-up">
+        <h2 class="page_title_text">Explore Our Menu</h2>
+      </section>
+      <!-- Out Specials -->
+      <section id="ourSpecials" data-aos="fade-down">
+        <div class="container">
+          <h3 class="outSpecials_title">Out Specials</h3>
+          <div class="row outSpecials_wrapper">
+            <!-- Out Specials-item-1 -->
+            <div class="col-xl-6 col-sm-12 col-md-6">
+              <div class="row outSpeacials_item hover_item">
+                <div class="col-lg-6 col-md-12 col-6 outSpeacials_item-img">
+                  <i class="fa-solid fa-angles-left directional-left"></i>
+                  <img class="test" src="./IMG/food/outSpecials/mon-1.jpg" alt="" />
+                  <i class="fa-solid fa-angles-right directional-right"></i>
+                </div>
+                <div class="col-lg-6 col-md-12 col-6">
+                  <div class="outSpecials_info">
+                    <div class="outSpecials_item-title">
+                      Vegetable Pizza
+                    </div>
+                    <h3 class="outSpecials_item-price">$12</h3>
+                    <div class="outSpecials_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <!-- Out Specials-item-2 -->
+            <div class="col-xl-6 col-sm-12 col-md-6">
+              <div class="row outSpeacials_item hover_item">
+                <div class="col-lg-6 col-md-12 col-6 outSpeacials_item-img">
+                  <i class="fa-solid fa-angles-left directional-left"></i>
+                  <img src="./IMG/food/outSpecials/outSpecials-2/monAn-1.jpg" alt="" />
+                  <i class="fa-solid fa-angles-right directional-right"></i>
+                </div>
+                <div class="col-lg-6 col-md-12 col-6">
+                  <div class="outSpecials_info">
+                    <div class="outSpecials_item-title">
+                      Meat Stew
+                    </div>
+                    <h3 class="outSpecials_item-price">$16</h3>
+                    <div class="outSpecials_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Out Specials -->
+
+      <!-- Top Dishes -->
+      <section id="topDishes" data-aos="fade-down">
+        <div class="container">
+          <h3 class="topDishes_title">Top Dishes</h3>
+          <div class="row topDishes_wrapper">
+            <!-- Top Dishes-item-1 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row topDishes_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 topDishes_item-img">
+                  <img src="./IMG/food/breakfast/breakfast-4.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="topDishes_info">
+                    <div class="topDishes_item-title">Fried egg</div>
+                    <h3 class="topDishes_item-price">$12</h3>
+                    <div class="topDishes_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Top Dishes-item-2 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row topDishes_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 topDishes_item-img">
+                  <img src="./IMG/food/dinner/hot-soup.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="topDishes_info">
+                    <div class="topDishes_item-title">Hot Soup</div>
+                    <h3 class="topDishes_item-price">$12</h3>
+                    <div class="topDishes_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Top Dishes-item-3 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row topDishes_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 topDishes_item-img">
+                  <img src="./IMG/food/dinner/dinner-1.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="topDishes_info">
+                    <div class="topDishes_item-title">Hot Noodles</div>
+                    <h3 class="topDishes_item-price">$12</h3>
+                    <div class="topDishes_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Top Dishes -->
+
+      <!-- Breakfast -->
+      <section id="beakfast" data-aos="fade-down">
+        <div class="container-md">
+          <h3 class="breakfast_title">Breakfast</h3>
+          <div class="row breakfast_wrapper">
+            <!-- Breakfast-item-1 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/breakfast/breakfast-1.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Hot Green Bowl</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-2 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/breakfast/breakfast-2.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Fruit soup</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-3 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/breakfast/breakfast-3.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Butter sponge cake</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-4 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/breakfast/breakfast-4.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Fried egg</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-5 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/breakfast/breakfast-5.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Egg With Sandwich</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lunch -->
+      <section id="beakfast" data-aos="fade-down">
+        <div class="container-md">
+          <h3 class="breakfast_title">Lunch</h3>
+          <div class="row breakfast_wrapper">
+            <!-- Breakfast-item-1 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/lunch/lunch-1.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Grilled Beef</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-2 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/lunch/lunch-2.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Fried Tofu</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-3 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/0a2c6cddf02958d33e35a5b12232220c2db2547d/1b93e/images/food-3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Hot Green Bowl</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-4 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/lunch/lunch-3.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Hot Green Bowl</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-5 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/0a2c6cddf02958d33e35a5b12232220c2db2547d/1b93e/images/food-3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Hot Green Bowl</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-6 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/lunch/lunch-4.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Bean Vermicelli</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dinner -->
+      <section id="beakfast" data-aos="fade-down">
+        <div class="container-md">
+          <h3 class="breakfast_title">Dinner</h3>
+          <div class="row breakfast_wrapper">
+            <!-- Breakfast-item-1 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/dinner/dinner-1.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Hot Noodles</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-2 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/dinner/dinner-2.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Hot Green Bowl</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-3 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/dinner/dinner-3.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Hot Noodle Meatball</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-4 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img src="./IMG/food/dinner/hot-soup.jpg" alt="" />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Hot Soup</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Breakfast-item-5 -->
+            <div class="col-xl-4 col-sm-6">
+              <div class="row breakfast_item hover_item">
+                <div class="col-md-5 col-sm-12 col-6 breakfast_item-img">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/0a2c6cddf02958d33e35a5b12232220c2db2547d/1b93e/images/food-3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-7 col-sm-12 col-6">
+                  <div class="breakfast_info">
+                    <div class="breakfast_item-title">Hot Green Bowl</div>
+                    <h3 class="breakfast_item-price">$12</h3>
+                    <div class="breakfast_item-stars">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer container-fluid">
+      <div class="container-md">
+        <div class="row footer_wrap">
+          <div class="col-md-4">
+            <span class="row"
+              ><img src="./img/icon/logo.svg" class="col-md-7 col-4" alt=""
+            /></span>
+            <p
+              class="text_arial"
+              style="--fonz: 1.8rem; margin: 1rem 2rem 2rem 0"
+            >
+              Fresh and delicious traditional Bangladeshi food to delight the
+              whole family.
+            </p>
+            <h3 class="text_popin" style="--fonz: 2rem">Follow us</h3>
+            <a href="" class="icons"><i class="fab fa-facebook"></i></a>
+            <a href="" class="icons"><i class="fab fa-github"></i></a>
+            <a href="" class="icons"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="col-md">
+            <h3 class="text_popin" style="--fonz: 2rem">Links</h3>
+            <a href="" class="links text_arial">Home</a>
+            <a href="" class="links text_arial">Menu</a>
+            <a href="" class="links text_arial">Book Table</a>
+            <a href="" class="links text_arial">About Us</a>
+            <a href="" class="links text_arial">Contact Us</a>
+            <a href="" class="links text_arial">Privacy Policy</a>
+          </div>
+          <div class="col-md">
+            <h3 class="text_popin" style="--fonz: 2rem">Support</h3>
+            <a href="" class="links text_arial">Contact</a>
+            <a href="" class="links text_arial">Support Center</a>
+            <a href="" class="links text_arial">Feedback</a>
+          </div>
+          <div class="col-md">
+            <h3 class="text_popin" style="--fonz: 2rem">Contact</h3>
+            <a href="" class="links text_arial">+880123</a>
+            <a href="" class="links text_arial">webcifar@gmail.com</a>
+            <a href="" class="links text_arial"
+              >GEC Circle, Chittagong, Bangladesh</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <p
+      class="container-md text_popin"
+      style="--fonz: 1.8rem; padding: 1.2rem 0"
+    >
+      © copyright 2022 Shaif’s Cuisine | By team 9
+    </p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./JS/module/aos.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
