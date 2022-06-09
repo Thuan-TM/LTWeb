@@ -1,0 +1,126 @@
+
+/* Css animate */
+/* Hướng dẫn: muốn dùng được thì trong thẻ html phải thêm class animated
+    type_animate  = "giá trị" để xác định loại animation cho thẻ html
+*/
+
+:root {
+    --animated-delay: 0s;
+    --animated-duration: 0.5s;
+    --animated-timing-function: linear;
+}
+body{
+    overflow-x: hidden;
+}
+
+.animated[type_animate = "fadeLeft"].active {
+    opacity: 1;
+    animation-name: fadeLeft ;
+    animation-timing-function: var(--animated-timing-function);
+    animation-delay: var(--animated-delay);
+    animation-duration: var(--animated-duration);
+}
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-50%,0,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0) ;
+    }
+}
+
+.animated[type_animate = "fadeRight"].active {
+    opacity: 1;
+    animation-name: fadeRight ;
+    animation-timing-function: var(--animated-timing-function);
+    animation-delay: var(--animated-delay);
+    animation-duration: var(--animated-duration);
+}
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translate3d(50%,0,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0) ;
+    }
+}
+
+.animated[type_animate = "fadeUp"].active {
+    opacity: 1;
+    animation-name: fadeUp ;
+    animation-timing-function: var(--animated-timing-function);
+    animation-delay: var(--animated-delay);
+    animation-duration: var(--animated-duration);
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0,20%,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0) ;
+    }
+}
+
+.animated[type_animate = "fadeDown"].active {
+    opacity: 1;
+    animation-name: fadeDown ;
+    animation-timing-function: var(--animated-timing-function);
+    animation-delay: var(--animated-delay);
+    animation-duration: var(--animated-duration);
+}
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0,-20%,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0) ;
+    }
+}
+
+.animated[type_animate = "scaleUp"].active {
+    opacity: 1;
+    animation-name: scaleUp ;
+    animation-timing-function: var(--animated-timing-function);
+    animation-delay: var(--animated-delay);
+    animation-duration: var(--animated-duration);
+}
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0) ;
+    }
+}
+ 
+.animated[type_animate = "scaleDown"].active {
+    opacity: 1;
+    animation-name: scaleDown ;
+    animation-timing-function: var(--animated-timing-function);
+    animation-delay: var(--animated-delay);
+    animation-duration: var(--animated-duration);
+}
+@keyframes scaleDown {
+    from {
+        opacity: 0;
+        transform: scale(1.3);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0) ;
+    }
+}
+
+.animated[type_animate] {
+    opacity: 0;
+}

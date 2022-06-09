@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Animation</title>
+
+    <!-- Cach Link thu vien animation -->
+    <link rel="stylesheet" href="./animate.css">
+    <script src="./animate.js"></script>
+    <!--  -->
+
+    <style>
+        ul {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        li {
+            width: 50%;
+            height: 500px;
+            background: #000;
+            color: aliceblue;
+            margin: 20px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="containner" style="height: auto;">
+        <ul>
+            <li class="animated" type_animate = "fadeLeft">1</li>
+            <li class="animated" type_animate = "fadeRight">2</li>
+            <li class="animated" type_animate = "fadeUp">3</li>
+            <li class="animated" type_animate = "fadeDown">4</li>
+            <li class="animated" type_animate = "scaleUp">5</li>
+            <li class="animated" type_animate = "scaleDown">6</li>
+            <li class="animated" type_animate = "fadeLeft">7</li>
+            <li class="animated" type_animate = "fadeDown">8</li>
+            <li class="animated" type_animate = "scaleDown">9</li>
+            <li class="animated" type_animate = "fadeUp">10</li>
+        </ul>
+    </div>
+</body>
+</html>
