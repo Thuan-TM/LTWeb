@@ -50,3 +50,55 @@ a.btn_ {
     border-radius: 12px;
     font-weight: 600;
 }
+
+
+/* header */
+.header {
+    padding: 2rem 0;
+}
+.nav_list {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav_items {
+    line-height: 4.6rem;
+    color: var(--black-1);
+    cursor: pointer;
+}
+.nav_items:hover {
+    color: var(--green-1);
+}
+
+/*  */
+
+
+
+/* footer */
+.footer {
+    /* height: 100px; */
+    padding: 8rem 0 4rem;
+    background-color:var(--lightGreen-1) ;
+}
+.footer h3 {
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+}
+.footer .icons {
+    padding: .5rem 1rem;
+    color: var(--black-3);
+    font-size: 2.6rem;
+    margin-right: 1rem;
+    border: 1px solid var(--green-2);
+    background: var(--white-1);
+    border-radius: 2rem;
+}
+.footer_wrap {
+    gap: 1.5rem;
+}
+.footer .links {
+    --fonz: 1.8rem;
+    display: block;
+    color: var(--black-2);
+    padding-bottom: 1rem;
+}
+/*  */
