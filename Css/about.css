@@ -3,6 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    background: #f5fcf4;
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*  our story */
+.our_story {
+    padding: 10rem 0;
 }
