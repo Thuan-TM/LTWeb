@@ -4,7 +4,7 @@ window.onload = ()=>{
         entries.forEach(e => {
             e.target.classList.toggle('active', e.isIntersecting)
         })
-    },)
+    })
 
     animateds.forEach(animate =>{
         observer.observe(animate)
