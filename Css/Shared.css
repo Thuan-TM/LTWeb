@@ -99,3 +99,13 @@ a.btn_ {
     padding-bottom: 1rem;
 }
 /*  */
+@media screen and (max-width: 575px ){
+    html {
+        font-size: 31.25%;
+    }
+}
+@media screen and (max-width: 767px) {
+    html {
+        font-size:60%;
+    }
+}
