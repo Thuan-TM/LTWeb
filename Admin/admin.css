@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    padding: 0 1rem;
+}
+main {
+    background-color: #f0f5f8;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header page */
+.admin_content {
+    background-color: #333;
+    padding: 1rem;
+}
+.admin_title {
+    color: #fff;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+.admin_icon i {
+    color: #fff;
+    background-color: #555;
+    padding: 0.7rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.admin_icon i:first-child {
+    margin-right: 0.8rem;
+}
+
+/* Content */
+/* Design phần admin */
+.content_left {
+    background-color: #fff;
+}
+
+.user {
+    display: flex;
+}
+
+.page_icon {
+    text-align: center;
+    padding: 0.5rem 1.5rem 0.5rem 2rem;
+}
+.page_icon i {
+    font-size: 2.6rem;
+    line-height: 4rem;
+}
+.page_admin {
+    padding: 0.5rem 0;
+}
+.page_admin .userName {
+    font-size: 1.5rem;
+}
+
+.status {
+    display: flex;
+}
+.status .status_icon {
+    color: green;
+    padding-right: 0.2rem;
+}
+.status p{
+    font-size: 0.8rem;
+    color: green;
+    margin: 0;
+}
+
+/* Design search */
+.search {
+    padding: 1rem;
+    border-top: 2px solid #777;
+}
+.search input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
+/* Design phần chức năng */
+
+.list_chucNang {
+    margin: 0;
+}
+.item_chucNang:first-child {
+    border-top: 1px solid #333;
+}
+.item_chucNang {
+    display: flex;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.icon_chucNang i {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+}
+.item_chucNang a {
+    font-size: 1.2rem;
+}
+.item_chucNang:hover {
+    cursor: pointer;
+    background-color: #2da6fe;
+}
+.item_chucNang a:hover {
+    color: #000;
+}
+
+
+/* Design phần content bên phải */
+.homePage_title {
+    padding-top: 1rem;
+}
+.homePage_title p{
+    padding: 2rem;
+    background-color: #d0e6fb;
+    font-size: 2rem;
+}
+.dashboard {
+    background-color: #fff;
+    padding: 2rem 0;
+    margin: 0;
+}
+.dashboard_item {
+    text-align: center;
+    border-right: 2px solid #666;
+}
+.dashboard_item:last-child {
+    border-right: none;
+}
+
+.icon i {
+    font-size: 1.5rem;
+}
+
+.amount {
+    font-size: 2.5rem;
+}
+.dashboard_item p {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.new_orders i {
+    color: #2da6fe;
+}
+
+.comments i {
+    color: #e3b34b;
+}
+.new_users i {
+    color: #12bea8;
+}
+
+.amount_search i {
+    color: #d2354c;
+}
