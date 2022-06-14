@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+th, td {
+    text-align: left;
+    padding: 1.5rem;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+/* Design phần bên trên dish */
+.add_dish {
+    color: #fff;
+    border-radius: 5px;
+    background-color: #75ce4c;
+    width: 11rem;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.search_dish button {
+    background-color: #3eccc0;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 0.8rem;
+    margin-left: 0.5rem;
+    width: 8rem;
+    font-size: 1.1rem;
+}
+
+.search_dish input {
+    width: 14rem;
+    padding: 0.5rem;
+}
+.search_dish {
+    display: flex;
+}
+
+.chucNang {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.search_dish button:hover, .add_dish:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Design phần dish */
+.dish_list {
+    width: 100%;
+}
+.dish_item-manipulation i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #fff;
+}
+.dish_item-manipulation i:first-child {
+    background-color: #75ce4c;
+}
+.dish_item-manipulation i:nth-child(2) {
+    background-color: #3eccc0;
+}
+.dish_item-manipulation i:last-child {
+    background-color: #fb6c5c;
+}
+
+.dish_item-manipulation i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+

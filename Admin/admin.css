@@ -114,9 +114,17 @@ a {
 .item_chucNang a:hover {
     color: #000;
 }
-
+.ative {
+    background-color: #2da6fe;
+}
 
 /* Design phần content bên phải */
+.path {
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
 .homePage_title {
     padding-top: 1rem;
 }

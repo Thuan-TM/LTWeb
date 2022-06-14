@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dish</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dish.css" />
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <!-- Header page -->
+    <header>
+      <div class="container-fluid">
+        <div class="row admin_content">
+          <div class="col-11 admin_title">PAGE ADMIN</div>
+          <div class="col-1 admin_icon">
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-bell"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End header page -->
+
+    <!-- Content -->
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3 content_left">
+            <div class="user">
+              <div class="page_icon">
+                <i class="fa-solid fa-earth-africa"></i>
+              </div>
+              <div class="page_admin">
+                <div class="userName">Nhóm 8</div>
+                <div class="status">
+                  <div class="status_icon">
+                    <i class="fa-solid fa-circle"></i>
+                  </div>
+                  <p>ONLINE</p>
+                </div>
+              </div>
+            </div>
+            <div class="search">
+              <input type="text" placeholder="Search..." />
+            </div>
+            <ul class="list_chucNang">
+              <li class="item_chucNang">
+                <div class="icon_chucNang">
+                  <i class="fa-solid fa-house-user"></i>
+                </div>
+                <a href="#">Home page</a>
+              </li>
+              <li class="item_chucNang ative">
+                <div class="icon_chucNang">
+                  <i class="fa-solid fa-list"></i>
+                </div>
+                <a href="#">Dish</a>
+              </li>
+              <li class="item_chucNang">
+                <div class="icon_chucNang">
+                  <i class="fa-solid fa-user-check"></i>
+                </div>
+                <a href="#">Client</a>
+              </li>
+              <li class="item_chucNang">
+                <div class="icon_chucNang">
+                  <i class="fa-solid fa-receipt"></i>
+                </div>
+                <a href="#">Statistical</a>
+              </li>
+              <li class="item_chucNang">
+                <div class="icon_chucNang">
+                  <i class="fa-solid fa-right-to-bracket"></i>
+                </div>
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-9">
+            <div class="path">
+              <i class="fa-solid fa-house-chimney"></i> Home / Dish
+            </div>
+            <div class="homePage_title"><p>DISH</p></div>
+            <div class="chucNang">
+                <div class="add_dish">Thêm món mới <i class="fa-solid fa-plus"></i></div>
+                <div class="search_dish">
+                    <input type="text" placeholder="Nhập từ khóa...">
+                    <button>Tìm kiếm</button>
+                </div>
+            </div>
+            <p>Danh sách mõn ăn</p>
+            <table class="dish_list">
+              <tr>
+                <th class="column_dish">Mã số</th>
+                <th class="column_dish">Tên món</th>
+                <th class="column_dish">Người làm</th>
+                <th class="column_dish">Ngày làm</th>
+                <th class="column_dish">Số lượng</th>
+                <th class="column_dish">Trạng thái</th>
+                <th class="column_dish"></th>
+              </tr>
+            <!-- Món 1 -->
+              <tr class="dish_item">
+                <td>01</td>
+                <td>Sweet Potato Fries Bowl</td>
+                <td>Thắng</td>
+                <td>14/6/2022</td>
+                <td>2</td>
+                <td>Còn nóng</td>
+                <td class="dish_item-manipulation">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <i class="fa-solid fa-wrench"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </td>
+              </tr>
+              <!-- Món 2 -->
+              <tr class="dish_item">
+                <td>02</td>
+                <td>Vegan Salad bowl</td>
+                <td>Thuấn</td>
+                <td>14/6/2022</td>
+                <td>1</td>
+                <td>Đã nguội</td>
+                <td class="dish_item-manipulation">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <i class="fa-solid fa-wrench"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </td>
+              </tr>
+              <!-- Món 3 -->
+              <tr class="dish_item">
+                <td>03</td>
+                <td>Sweet Potato Fries Bowl</td>
+                <td>Tâm</td>
+                <td>14/6/2022</td>
+                <td>3</td>
+                <td>Đã nguội</td>
+                <td class="dish_item-manipulation">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <i class="fa-solid fa-wrench"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </td>
+              </tr>
+              <!-- Món 4 -->
+              <tr class="dish_item">
+                <td>04</td>
+                <td>Sweet Potato Fries Bowl</td>
+                <td>Ngọc</td>
+                <td>14/6/2022</td>
+                <td>5</td>
+                <td>Còn nóng</td>
+                <td class="dish_item-manipulation">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <i class="fa-solid fa-wrench"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </td>
+              </tr>
+              <!-- Món 5 -->
+              <tr class="dish_item">
+                <td>05</td>
+                <td>Sweet Potato Fries Bowl</td>
+                <td>Hui</td>
+                <td>14/6/2022</td>
+                <td>2</td>
+                <td>Còn nóng</td>
+                <td class="dish_item-manipulation">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <i class="fa-solid fa-wrench"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </td>
+              </tr>
+              <!-- Món 6 -->
+              <tr class="dish_item">
+                <td>06</td>
+                <td>Sweet Potato Fries Bowl</td>
+                <td>Phương</td>
+                <td>14/6/2022</td>
+                <td>7</td>
+                <td>Đã nguội</td>
+                <td class="dish_item-manipulation">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <i class="fa-solid fa-wrench"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
