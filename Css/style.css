@@ -33,3 +33,30 @@
     height: 100%;
 }
 /*  */
+
+/* Discount */
+.discount {
+    padding: 10rem 0;  
+}
+.discount_wrap {
+    background: var(--lightGreen-1) url(../Img/discount-illustration.png) no-repeat bottom right / 10rem;
+    border-radius: 1.5rem;
+}
+/*  */
+
+/* event */
+.event {
+    padding: 10rem 0;
+}
+.event1 {
+    position: relative;
+}
+.event1 img:nth-child(2) {
+    width: 20%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;  
+}
+/*  */
