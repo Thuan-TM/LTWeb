@@ -7,12 +7,15 @@
     <title>Shaif's Cuisine</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./animate/animate.css">
+    <script src="./animate/animate.js"></script>
     <link rel="stylesheet" href="./Css/Shared.css ">
     <link rel="stylesheet" href="./Css/about.css">
 
+
 </head>
 <body>
-    <div class="container-md">
+    <div class="container">
         <!-- header -->
         <div class="row header position-relative">
             <div class="col-md-4">
@@ -30,9 +33,10 @@
         </div>
 
         <!-- our Story -->
-        <div class="row our_story">
+        <div class="row our_story animated" type_animate = "fadeUp">
             <div class="col-md-6">
-                <img src="./Img/about/ourstoryimg.png" alt="">
+                <span class="w-auto h-auto my-2"><img src="./Img/about/ourstoryimg.png" alt=""></span>
+                
             </div>
             <div class="col-md-6 py-4 py-md-0">
                 <h1 class="text_popin py-1 " style="--fonz: 3.6rem;">Our Story</h1>
@@ -42,13 +46,75 @@
                 <br>
                 Since 1998, we are the perfect place for a romantic meal for two, a catch-up with friends, family parties, business meetings, and bringing loved ones together. With comfortable surroundings, affordable prices, and seating for up to 65 guests, we can cater for all occasions.
                 </p>
+            </div>
+        </div>
+        <!--     -->
+
+        <!-- our goals -->
+        <div class="row our_goals justify-content-md-center align-items-md-center" >
+            <div class="col-12 col-md-10 mb-5 animated" type_animate= "fadeLeft">
+                <h1 class="text_popin text-md-center pb-2" style="--fonz: 3.6rem;">Our Goals</h1>
+                <p class="text_arial text-md-center" style="--fonz: 1.8rem;">We shall sell delicious and remarkable food and beverages that meet the highest quality, freshness, and seasonality criteria while combining modern-creative and classic cooking traditions. By showcasing warmth, graciousness, efficiency, skill, professionalism, and integrity in our work, we will continually serve our consumers with exceptional service. To have every customer who comes through our doors leave impressed by their experience at Shaif's Cuisine and excited to come back again.</p>
+            </div>
+            <div class="col-12 col-md-10 animated" type_animate = "fadeRight">
+                <div class="d-flex flex-grow-1 gap-4">
+                    <span><img src="./Img/about/ourgoals_img1.png" alt=""></span>
+                    <span class="d-flex flex-grow-1 flex-column gap-4">
+                        <img src="./Img/about/ourgoals_img2.png" alt="">
+                        <img src="./Img/about/ourgoals_img3.png" alt="">
+                    </span>
+                </div>
                 
             </div>
 
         </div>
-
-
+        <!--     -->
         
+        <!-- Members Of The Group -->
+        <div class="members">
+            <h1 class="text_popin pb-5" style="--fonz: 3.6rem;">Members Of The Team</h1>
+            <ul class="d-flex justify-content-center align-items-center mb-5 position-relative">
+                <li class="px-4 mx-4 fs-2 rounded-circle items active">
+                    <i class="fa-solid fa-user"></i>
+                </li>
+                <li class="px-4 mx-4 fs-2 rounded-circle items">
+                    <i class="fa-solid fa-user"></i>
+                </li>
+                <li class="px-4 mx-4 fs-2 rounded-circle items">
+                    <i class="fa-solid fa-user"></i>
+                </li>
+                <li class="px-4 mx-4 fs-2 rounded-circle items">
+                    <i class="fa-solid fa-user"></i>
+                </li>
+                <span class="position-absolute w-100 " style="background-color: var(--black-3);height: 1px;z-index: -99;"></span>
+            </ul>
+            <div class="infor_members row animated"  type_animate = 'scaleUp'>
+                <!-- <div class="img_item col-md animated" type_animate = "fadeUp">
+                    <img src="./Img/about/deki.png" style="transform: scale(1.1);" alt="Nguyễn Thị Bích Ngọc">
+                </div>
+                <div class="infor col-md  pt-4 pt-md-0">
+                    <h2 class="text_popin fw-bold text-center pb-2" style="--fonz: 2.8rem;">Information</h2>
+                    <ul class="text_popin " style="--fonz: 1.8rem;">
+                        <li ><span class="fw-bolder">Name: </span>Nguyễn Thị Bích Ngọc</li>
+                        <li ><span class="fw-bolder">Age:</span> 20 <span class="ps-5 ms-5 fw-bolder">MSV: </span>2051063476</li>
+                        <li ><span class="fw-bolder">Class: </span> 62PM2 - Đại Học Thủy Lợi</li>
+                        <li ><span class="fw-bolder">Describe: </span></li>
+                        <li class="text-center fs-1">
+                            <a href="https://www.facebook.com/profile.php?id=100071831855649">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://github.com/Bichngocc1701">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <!--  -->
     </div>
      <!-- footer -->
     <div class="footer container-fluid">
@@ -86,6 +152,7 @@
             </div>
         </div>
     </div>
-    <p class="container-md text_popin" style="--fonz: 1.8rem; padding: 1.2rem 0;">© copyright 2022 Shaif’s Cuisine | By team 9</p>
+    <p class="container text_popin" style="--fonz: 1.8rem; padding: 1.2rem 0;">© copyright 2022 Shaif’s Cuisine | By team 9</p>
+    <script src="./JavaScript/about.js"></script>
 </body>
 </html>
