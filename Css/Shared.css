@@ -51,6 +51,11 @@ a.btn_ {
     font-weight: 600;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* header */
 .header {
@@ -71,8 +76,20 @@ a.btn_ {
 
 /*  */
 
+/* storeInfo */
 
-
+.storeIfor {
+    padding: 8rem 0;
+    gap: 2rem;
+}
+.storeIfor .items {
+    max-width: 20rem;
+    background-color: var(--lightGreen-1);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+/*  */
 /* footer */
 .footer {
     /* height: 100px; */
