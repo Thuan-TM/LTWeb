@@ -4,59 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Link bootstrap header -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact.css">
+    <!-- Link bootstrap footer -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="./Img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
-    <link rel="stylesheet" href="./Css/Contact.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="Formmain">
-            <div class="Form1">
-                <div class="center">
-                    <div class="icon1">
+    <div class="container-fluid" style="background-color: #f5fcf4;">
+        <div class="header container">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <img class="logo1"
+                        src="https://d33wubrfki0l68.cloudfront.net/5509abae36c9c1c7d55a83ea5a1990f0d3b09c0a/12a1e/images/logo.svg"
+                        alt="" />
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-navbar text-bold" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-navbar text-bold" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-navbar text-bold" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-navbar text-bold" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                            <button style="width: 180px;" type="button" class="btn btn-success">Book Table</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container mt-5 mb-5">
+            <div class="formain">
+                <div class="form-contact">
+                    <div class="image-contact mb-3">
                         <img src="https://d33wubrfki0l68.cloudfront.net/4d9f5ac84201972450cc866ccfee0ae2fb4ad2fe/f4f2e/images/wall-clock-icon.svg"
                             alt="clock icon">
                     </div>
-                    <h3 class="title1">
+                    <div class="title-contact mb-1 text-icon">
                         10 AM - 7 PM
-                    </h3>
-                    <p class="text1">
+                    </div>
+                    <div class="text-contact">
                         Opening Hour
-                    </p>
+                    </div>
+                </div>
+                <div class="form-contact">
+                    <div class="image-contact mb-3">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/c98678d730ee777c722aa6fc644e149ba86e74d4/240fe/images/address-icon.svg"
+                            alt="clock icon">
+                    </div>
+                    <div class="title-contact mb-1 text-icon">
+                        GEC, Chittagong
+
+                    </div>
+                    <div class="text-contact">
+                        Address
+                    </div>
+                </div>
+                <div class="form-contact">
+                    <div class="image-contact mb-3">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/2d39cf6a442498142bd935a1ca5409ca5869e4be/e52ef/images/phone-icon.svg"
+                            alt="clock icon">
+                    </div>
+                    <div class="title-contact mb-1 text-icon">
+                        +880123443
+                    </div>
+                    <div class="text-contact">
+                        Call Now
+                    </div>
                 </div>
             </div>
-            
-            <div class="Form2">
-                <div class="center">
-                <div class="icon2">
-                    <img src="https://d33wubrfki0l68.cloudfront.net/c98678d730ee777c722aa6fc644e149ba86e74d4/240fe/images/address-icon.svg"
-                        alt="clock icon">
+        </div>
+
+        <div class="container" >
+            <h1>Contact & Inquiry</h1>
+            <br>
+            <form class="row g-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-md-6">
+                    <label for="inputfistname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputfistname">
                 </div>
-                <h3 class="title2">
-                    GEC, Chittagong
-                </h3>
-                <p class="text2">
-                    Address
-                </p>
+                <div class="col-md-6">
+                    <label for="inputlastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputlastname">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputsubject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="inputsubject">
+                </div>
+                <div class="col-12">
+                    <label for="inputmessage" class="form-label">Message</label>
+                    <textarea style="height: 200px;" class="form-control" id="Message"></textarea>
+                </div>
+                <div class="col-12 mb-5">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer container-fluid" >
+            <div class="container" >
+                <div class="row footer_wrap" >
+                    <div class="col-md-4">
+                        <span class="row"><img
+                                src="https://d33wubrfki0l68.cloudfront.net/5509abae36c9c1c7d55a83ea5a1990f0d3b09c0a/12a1e/images/logo.svg"
+                                class="col-md-7 col-4" alt=""></span>
+                        <p class="text_arial" style="--fonz: 1.8rem; margin: 1rem 2rem 2rem 0;">Fresh and delicious
+                            traditional Bangladeshi food to delight the whole family.</p>
+                        <h3 class="text_popin" style="--fonz: 2rem;">Follow us</h3>
+                        <a href="" class="icons"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="icons"><i class="fab fa-github"></i></a>
+                        <a href="" class="icons"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="col-md">
+                        <h3 class="text_popin" style="--fonz: 2rem;">Links</h3>
+                        <a href="" class="links text_arial">Home</a>
+                        <a href="" class="links text_arial">Menu</a>
+                        <a href="" class="links text_arial">Book Table</a>
+                        <a href="" class="links text_arial">About Us</a>
+                        <a href="" class="links text_arial">Contact Us</a>
+                        <a href="" class="links text_arial">Privacy Policy</a>
+                    </div>
+                    <div class="col-md">
+                        <h3 class="text_popin" style="--fonz: 2rem;">Support</h3>
+                        <a href="" class="links text_arial">Contact</a>
+                        <a href="" class="links text_arial">Support Center</a>
+                        <a href="" class="links text_arial">Feedback</a>
+                    </div>
+                    <div class="col-md">
+                        <h3 class="text_popin" style="--fonz: 2rem;">Contact</h3>
+                        <a href="" class="links text_arial">+880123</a>
+                        <a href="" class="links text_arial">webcifar@gmail.com</a>
+                        <a href="" class="links text_arial">GEC Circle, Chittagong, Bangladesh</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="Form3">
-            <div class="center">
-            <div class="icon3">
-                <img src="https://d33wubrfki0l68.cloudfront.net/2d39cf6a442498142bd935a1ca5409ca5869e4be/e52ef/images/phone-icon.svg"
-                    alt="clock icon">
-            </div>
-            <h3 class="title3">
-                +880123443
-            </h3>
-            <p class="text3">
-                Call Now
-            </p>
-        </div>
-    </div>
-    </div>
-    </div>
+        <p class="container-md text_popin" style="--fonz: 1.8rem; padding: 1.2rem 0;">© copyright 2022 Shaif’s Cuisine |
+            By team 9</p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <!--thu vien js-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="script.js"></script>
 </body>
 
 </html>
