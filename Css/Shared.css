@@ -119,13 +119,14 @@ img {
     padding-bottom: 1rem;
 }
 /*  */
-@media screen and (max-width: 575px ){
+
+@media (max-width: 575px) {
     html {
-        font-size: 31.25%;
+        font-size: 50%;
     }
 }
-@media screen and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
     html {
-        font-size:60%;
+        font-size: 60%;
     }
 }
