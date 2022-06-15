@@ -34,7 +34,21 @@ a {
 }
 
 .admin_icon i:first-child {
-    margin-right: 0.8rem;
+    margin-right: 0.2rem;
+}
+
+.admin_icon i:last-child {
+    padding: 0.7rem 0.8rem;
+}
+
+.admin_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin_icon i:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 /* Content */
@@ -43,20 +57,18 @@ a {
     background-color: #fff;
 }
 
-.user {
-    display: flex;
-}
-
 .page_icon {
     text-align: center;
-    padding: 0.5rem 1.5rem 0.5rem 2rem;
+    padding: 0.5rem 0.2rem 0.5rem 1rem; 
 }
-.page_icon i {
+
+.page_icon img {
     font-size: 2.6rem;
     line-height: 4rem;
+    width: 5rem;
 }
 .page_admin {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.2rem 0.5rem 0;
 }
 .page_admin .userName {
     font-size: 1.5rem;
@@ -71,9 +83,10 @@ a {
 }
 .status p{
     font-size: 0.8rem;
-    color: green;
     margin: 0;
+    padding-top: 0.2rem;
 }
+
 
 /* Design search */
 .search {
@@ -171,4 +184,13 @@ a {
 
 .amount_search i {
     color: #d2354c;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:907px){
+    .dashboard_item {
+        border: none;
+    }
 }

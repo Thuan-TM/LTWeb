@@ -14,6 +14,7 @@ tr:nth-child(even) {
     background-color: #D6EEEE;
 }
 
+
 /* Design phần bên trên dish */
 .add_dish {
     color: #fff;
@@ -58,9 +59,13 @@ tr:nth-child(even) {
 .dish_list {
     width: 100%;
 }
+
+.row_dish {
+    background-color: #bdf7f3;
+}
 .dish_item-manipulation i {
     font-size: 1.2rem;
-    margin-right: 0.5rem;
+    margin: 0.2rem;
     padding: 0.5rem;
     border-radius: 5px;
     color: #fff;
@@ -80,4 +85,11 @@ tr:nth-child(even) {
     opacity: 0.8;
 }
 
+.dish_item:hover {
+    background-color: #89ecec;
+}
 
+.table_dish {
+    height: 40%;
+    overflow:auto;
+}
