@@ -1,0 +1,153 @@
+
+
+/* The flavor of trandition */
+.flavor {
+    padding: 10rem 0;
+}
+/*  */
+
+/* Our Specials */
+.ourSpecials {
+    padding: 15rem 0 10rem;
+}
+.ourSpecials .items {
+    background-color: var(--lightGreen-1);
+    border-radius: 1.2rem;
+}
+.ourSpecials .items .img {
+    overflow: hidden;
+    border-radius: 1.2rem;
+    margin-top: calc(-50% - 1rem);
+    margin-bottom: 2rem;
+}
+/*  */
+
+/* top Dishes */
+.topDishes {
+    padding: 10rem 0;
+}
+.topDishes .items {
+    background-color: var(--lightGreen-1);
+    padding: 1.5rem 1rem;
+    border-radius: 1.2rem;
+    height: 100%;
+}
+/*  */
+
+/* Discount */
+.discount {
+    padding: 10rem 0;  
+}
+.discount_wrap {
+    background: var(--lightGreen-1) url(../Img/discount-illustration.png) no-repeat bottom right / 10rem;
+    border-radius: 1.5rem;
+}
+/*  */
+
+/* event */
+.event {
+    padding: 10rem 0;
+}
+.event1 {
+    position: relative;
+}
+.event1 img:nth-child(2) {
+    width: 20%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;  
+}
+/*  */
+
+/* bookevent */
+.bookevent {
+    padding-bottom: 10rem ;
+}
+.bookevent .items {
+    background: var(--lightGreen-1);
+    border-radius: 1.5rem;
+}
+/*  */
+
+/* ourFood */
+.ourFood {
+    padding: 10rem 0;
+}
+.ourFood .items {
+    background-color: var(--lightGreen-1);
+    border-radius: 1.2rem;
+}
+/*  */
+
+/* customers */
+.customers {
+    padding: 10rem 0;
+}
+.customers .items {
+    background-color: var(--lightGreen-1);
+    border-radius: 1.5rem;
+}
+/*  */
+
+/* newsletter*/
+.newsletter {
+    padding: 10rem 0;
+}
+.newsletter_wrap {
+    padding: 5rem;
+    background-color: var(--green-2);
+    border-radius: 1.3rem;
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+}
+.newsletter input {
+    padding: 2rem;
+    width: 75%;
+    border: none;
+    outline: none;
+    border-radius: 1.2rem 0 0 1.2rem; 
+}
+.newsletter button {
+    width: 25%;
+    padding: 2rem;
+    border: none;
+    outline: none;
+    color: var(--white-1);
+    background-color:var(--green-1);
+    border-radius: 0 1.2rem  1.2rem 0; 
+}
+/*  */
+
+/*  */
+.comehome {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    background-color: var(--white-1);
+    opacity: 0.5;
+    transition: opacity 0.25s linear;
+}
+.comehome a {
+    color: var(--black-3);
+}
+.comehome:hover {
+    opacity: 1;
+}
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+/*  */
+@media (max-width: 767px) {
+    .flavor , .storeIfor, .topDishes , .discount ,.event , .ourFood, .customers , .newsletter  {
+        padding: 50px 0;
+    }
+    .bookevent {
+        padding-bottom: 50px;
+    }
+}
