@@ -17,7 +17,7 @@ a {
 
 /* Header page */
 .admin_content {
-    background-color: #333;
+    background: linear-gradient(to right, #47395c, #3396cc);
     padding: 1rem;
 }
 .admin_title {
@@ -27,7 +27,7 @@ a {
 }
 .admin_icon i {
     color: #fff;
-    background-color: #555;
+    background-color: #666;
     padding: 0.7rem;
     border: 1px solid #555;
     border-radius: 5px;
@@ -37,8 +37,13 @@ a {
     margin-right: 0.2rem;
 }
 
+.admin_icon i:nth-child(2) {
+    padding: 0.7rem 0.8rem;
+    margin-right: 0.2rem;
+}
 .admin_icon i:last-child {
     padding: 0.7rem 0.8rem;
+    display: none;
 }
 
 .admin_content {
@@ -49,6 +54,10 @@ a {
 .admin_icon i:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+.open {
+    display: none;
 }
 
 /* Content */
@@ -100,9 +109,9 @@ a {
 
 
 /* Design phần chức năng */
-
 .list_chucNang {
     margin: 0;
+    overflow: hidden;
 }
 .item_chucNang:first-child {
     border-top: 1px solid #333;
@@ -110,25 +119,30 @@ a {
 .item_chucNang {
     display: flex;
     padding: 1.5rem 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #333; 
 }
 
 .icon_chucNang i {
     font-size: 2rem;
     padding: 0 0.5rem;
+    color: #1e90ff;
 }
 .item_chucNang a {
     font-size: 1.2rem;
+    color: #1e90ff;
 }
 .item_chucNang:hover {
     cursor: pointer;
     background-color: #2da6fe;
 }
-.item_chucNang a:hover {
-    color: #000;
+.item_chucNang:hover a, .item_chucNang:hover i{
+    color: #fff;
 }
-.ative {
+.active {
     background-color: #2da6fe;
+}
+.active i, .active a {
+    color: #fff;
 }
 
 /* Design phần content bên phải */
@@ -189,8 +203,12 @@ a {
 
 /* Responsive */
 
-@media screen and (max-width:907px){
+@media screen and (max-width:740px){
     .dashboard_item {
         border: none;
     }
+    .admin_icon i:last-child {
+        display: inline-block;
+    }
 }
+

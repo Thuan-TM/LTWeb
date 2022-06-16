@@ -44,7 +44,7 @@ tr:nth-child(even) {
     display: flex;
 }
 
-.chucNang {
+.chucNang_dish {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
@@ -56,6 +56,9 @@ tr:nth-child(even) {
 }
 
 /* Design phần dish */
+.dish_title {
+    font-size: 2rem;
+}
 .dish_list {
     width: 100%;
 }
@@ -92,4 +95,14 @@ tr:nth-child(even) {
 .table_dish {
     height: 40%;
     overflow:auto;
+}
+@media screen and (max-width: 576px){
+    .chucNang_dish {
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+    .search_dish {
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
 }
