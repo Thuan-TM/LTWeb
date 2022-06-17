@@ -58,20 +58,26 @@ img {
 }
 
 /* header */
-.header {
-    padding: 2rem 0;
+.navbar {
+    margin-top: 1rem;
+    background-color: var(--lightGreen-2);
 }
-.nav_list {
-    display: flex;
-    justify-content: flex-end;
+.nav-item {
+    margin-left: 2rem;
 }
-.nav_items {
-    line-height: 4.6rem;
-    color: var(--black-1);
+.navbar i {
+    font-size: 3rem !important;
     cursor: pointer;
 }
-.nav_items:hover {
+
+.nav-item a {
+    color: var(--black-2);
+}
+.nav-item a:hover {
     color: var(--green-1);
+}
+.offcanvas {
+    background-color: var(--lightGreen-1);
 }
 
 /*  */
@@ -92,7 +98,6 @@ img {
 /*  */
 /* footer */
 .footer {
-    /* height: 100px; */
     padding: 8rem 0 4rem;
     background-color:var(--lightGreen-1) ;
 }
