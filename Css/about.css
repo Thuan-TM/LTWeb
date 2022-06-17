@@ -53,3 +53,13 @@ ul {
     object-fit: contain;
 }
 
+@media (max-width: 767px) {
+    .our_story,
+    .members,
+    .our_goals {
+        padding: 50px 0;
+    }
+    .bookevent {
+        padding-bottom: 50px;
+    }
+}
