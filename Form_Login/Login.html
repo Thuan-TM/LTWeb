@@ -20,7 +20,7 @@
                 </div>
                 <div class="header col-md-6 d-flex align-items-center">
                     <div class="form-login">
-                        <form class="row g-0">
+                        <form class="row g-0" action="../Admin/admin.html" onsubmit="checkLogin()">
                             <div class="Icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
                                     class="bi bi-door-open-fill" viewBox="0 0 16 16">
@@ -60,6 +60,20 @@
             </div>
         </div>
     </div>
+    <script>
+        const userName =  document.getElementById('inputusername')
+        const passWord =  document.getElementById('inputpassword')
+        function checkLogin() {
+            if(userName.value == "Admin" && passWord.value == "Team9"){
+                localStorage.setItem('Islogin',true)
+                return true
+            }
+            else {
+                localStorage.setItem('Islogin',false)
+                return false
+            }
+        }
+    </script>
 </body>
 
 </html>
