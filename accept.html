@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="accept.css">
+    <link rel="stylesheet" href="./Css/accept.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <title>Thank you!</title>
 </head>
@@ -14,8 +14,14 @@
         <div class="form">
             <h1>Thank you!</h1>
             <p>Your form submission has been received.</p>
-            <a href="Contact.html" class="back">← Back to our site</a>
+            <a href="" class="back" >← Back to our site</a>
         </div>
+        <script>
+            const btn = document.querySelector('.back')
+            btn.onclick = ()=> {
+                btn.href = localStorage.name
+            }
+        </script>
 </body>
 
 </html>
