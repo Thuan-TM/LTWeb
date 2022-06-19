@@ -10,11 +10,6 @@ if(localStorage.Islogin === 'false') {
 }
 
 //  dang suat
-
-const logOut = document.querySelector('.Logout')
 logOut.onclick = ()=> {
   localStorage.setItem('Islogin',false)
-  // window.location = './../Form_Login/Login.html'
-
-  // window.location = './../Form_Login/Login.html'
 }
