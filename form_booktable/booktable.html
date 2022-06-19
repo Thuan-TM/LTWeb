@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Link bootstrap header -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booktable.css">
+    <link rel="shortcut icon" href="./Img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Book table</title>
+</head>
+
+<body>
+    <div class="container-xxl" style="background-color: #f5fcf4;">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <img class="logo1"
+                        src="https://d33wubrfki0l68.cloudfront.net/5509abae36c9c1c7d55a83ea5a1990f0d3b09c0a/12a1e/images/logo.svg"
+                        alt="" />
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-navbar" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-navbar" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-navbar" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-navbar" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                            <button type="button" class="btn btn-success">Book Table</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="container-form container " style="margin-bottom: 5rem !important;" data-aos="fade-up">
+                <div class="booktable mb-3">
+                    <h1><strong>Book Table</strong></h1>
+                    <br>
+                </div>
+                <form class="row g-3" action="http://127.0.0.1:5500/form_booktable/form_accept.html" method="get">
+                    <div class="col-md-6 height-book-table">
+                        <label for="inputFirstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstName" name="FirstName" required>
+                    </div>
+                    <div class="col-md-6 height-book-table">
+                        <label for="inputLastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="inputLastName" name="LastName" required>
+                    </div>
+                    <div class="col-md-6 height-book-table">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" name="Email" required>
+                    </div>
+                    <div class="col-md-6 height-book-table">
+                        <label for="inputTableType" class="form-label">Table Type</label>
+                        <select id="inputTableType" class="form-select" required>
+                            <option selected>Choose</option>
+                            <option>Small(2 persons)</option>
+                            <option>Small(4 persons)</option>
+                            <option>Large(6 persons)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 height-book-table">
+                        <label for="inputGuestNumber" class="form-label">Guest Number</label>
+                        <input type="number" min="1" class="form-control" id="inputGuestNumber" name="Number" required>
+                    </div>
+                    <div class="col-md-6 height-book-table">
+                        <label for="inputPlacement" class="form-label">Placement</label>
+                        <select id="inputPlacement" class="form-select" required>
+                            <option selected>Choose</option>
+                            <option>Outdoor</option>
+                            <option>Indoor</option>
+                            <option>Rooftop</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 height-book-table" style="display: grid;">
+                        <label for="inputDate" class="form-label">Date</label>
+                        <input type="date" id="date" name="Date" class="picktime" required>
+                    </div>
+                    <div class="col-md-6 height-book-table" style="display: grid;">
+                        <label for="inputTime" class="form-label">Time</label>
+                        <input type="time" name="Time" id="time" class="picktime" required>
+                    </div>
+                    <div class="col-md-12 height-book-table" style="margin-bottom: 5px;">
+                        <label for="inputNote" class="form-label">Note</label>
+                        <textarea class="form-control form-floating" name="Note" id="note" rows="5"
+                            style="height: 150px;"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Book Table</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer container-fluid">
+        <div class="container">
+            <div class="row footer_wrap">
+                <div class="col-md-4">
+                    <span class="row"><img
+                            src="https://d33wubrfki0l68.cloudfront.net/5509abae36c9c1c7d55a83ea5a1990f0d3b09c0a/12a1e/images/logo.svg"
+                            class="col-md-7 col-4" alt=""></span>
+                    <p class="text_arial" style="--fonz: 1.8rem; margin: 1rem 2rem 2rem 0;">Fresh and delicious
+                        traditional Bangladeshi food to delight the whole family.</p>
+                    <h3 class="text_popin" style="--fonz: 2rem;">Follow us</h3>
+                    <a href="" class="icons"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="icons"><i class="fab fa-github"></i></a>
+                    <a href="" class="icons"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="col-md">
+                    <h3 class="text_popin" style="--fonz: 2rem;">Links</h3>
+                    <a href="" class="links text_arial">Home</a>
+                    <a href="" class="links text_arial">Menu</a>
+                    <a href="" class="links text_arial">Book Table</a>
+                    <a href="" class="links text_arial">About Us</a>
+                    <a href="" class="links text_arial">Contact Us</a>
+                    <a href="" class="links text_arial">Privacy Policy</a>
+                </div>
+                <div class="col-md">
+                    <h3 class="text_popin" style="--fonz: 2rem;">Support</h3>
+                    <a href="" class="links text_arial">Contact</a>
+                    <a href="" class="links text_arial">Support Center</a>
+                    <a href="" class="links text_arial">Feedback</a>
+                </div>
+                <div class="col-md">
+                    <h3 class="text_popin" style="--fonz: 2rem;">Contact</h3>
+                    <a href="" class="links text_arial">+880123</a>
+                    <a href="" class="links text_arial">webcifar@gmail.com</a>
+                    <a href="" class="links text_arial">GEC Circle, Chittagong, Bangladesh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="container-md text_popin" style="--fonz: 1.8rem; padding: 1.2rem 0;">© copyright 2022 Shaif’s Cuisine |
+        By team 9</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--thu vien js-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
