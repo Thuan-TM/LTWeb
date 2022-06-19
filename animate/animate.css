@@ -124,3 +124,53 @@ body{
 .animated[type_animate] {
     opacity: 0;
 }
+
+/* animation */
+.animation_left {
+    animation: left ;
+    animation-timing-function: var(--animated-timing-function);
+    animation-delay: var(--animated-delay);
+    animation-duration: var(--animated-duration);
+}
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translate3d(-50%,0,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.animation_right{
+    animation: right ;
+    animation-timing-function: var(--animated-timing-function);
+    animation-delay: var(--animated-delay);
+    animation-duration: var(--animated-duration);
+}
+@keyframes right{
+    from {
+        opacity: 0;
+        transform: translate3d(50%,0,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.animation_over{
+    animation: over ;
+    animation-timing-function: var(--animated-timing-function);
+    animation-delay: var(--animated-delay);
+    animation-duration: var(--animated-duration);
+}
+@keyframes over{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

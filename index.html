@@ -4,41 +4,359 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Img/favicon.ico" type="image/x-icon">
     <title>Shaif's Cuisine</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./animate/animate.css">
+    <script src="./animate/animate.js"></script>
     <link rel="stylesheet" href="./Css/Shared.css ">
     <link rel="stylesheet" href="./Css/style.css">
 
 </head>
 <body>
-    <div class="container-md">
-        <!-- header -->
-        <div class="row header position-relative">
-            <div class="col-md-4">
-                <span class="row"><img src="./img/icon/logo.svg" class = "col-md-5 col-lg-4 col-3" alt=""></span>
-            </div>
-            <div class="col-md-8 text_popin nav_list " style="--fonz: 1.8rem ;" >
-                <div class="row d-none d-md-block nav flex-md-column">
-                    <a href="" class="col-md nav_items">Home</a>
-                    <a href="" class="col-md nav_items">Menu</a>
-                    <a href="" class="col-md nav_items">About</a>
-                    <a href="" class="col-md nav_items">Contact</a>
-                    <a href="" class="col-md nav_items btn_">Book Table</a>
+    <!-- header -->
+    <nav class="navbar navbar-expand-md" id="home">
+        <div class="container ">
+            <a class="navbar-brand" href="#">
+                <img src="./Img/icon/logo.svg" alt="">
+            </a>
+            <i class="fa fa-bars navbar-toggler d-block fs-1 d-md-none fw-bolder" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></i>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header d-flex justify-content-end d-md-none">
+                    <i class="far fa-times fw-bold text-black-50" data-bs-dismiss="offcanvas"></i>
+                </div>
+                <div class=" offcanvas-body d-flex align-items-center" >
+                    <ul class="navbar-nav  align-items-md-center justify-content-end flex-grow-1 me-3  me-md-0 text-end text_popin" style="--fonz: 1.8rem ;">
+                        <li class="nav-item mt-4 mt-md-0 ">
+                            <a class="nav-link "  href="#">Home</a>
+                        </li>
+                        <li class="nav-item mt-4 mt-md-0 ">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item mt-4 mt-md-0 ">
+                            <a class="nav-link "  href="#">About</a>
+                        </li>
+                        <li class="nav-item mt-4 mt-md-0 ">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item mt-4 mt-md-0 ">
+                            <span><a class=" btn_" href="#">Book Table</a></span> 
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+        </nav>
+        <!--  -->
+        <!-- The flavor of tradition -->
+    <div class="container">
+        <div class="row flavor flex-column-reverse flex-md-row ">
+            <div class="col-md-6 pe-5 text-center text-md-start mt-5 mt-md-0 d-flex justify-content-center flex-column animated" type_animate = 'fadeRight'>
+                <h1 class="text_popin fw-bold pb-3" style="--fonz: 3.6rem;">The flavor of tradition</h1>
+                <p class="text_arial pb-3" style="--fonz: 1.8rem;">We are a multi-cuisine restaurant offering a wide variety of food experience in both casual and fine dining environment.</p>
+                <span>
+                    <a href="" class="btn_ text_popin" style="--fonz: 2rem;">Explore Menu</a>
+                    <a href="" class="text_popin ms-5" style="--fonz: 2rem; color: var(--green-1);">Book Table</a>    
+                </span>
+            </div>
+            <div class="col-md-6 animated" type_animate = 'fadeLeft'>
+                <img src="./Img/panner/panner0.png" alt="">
+            </div>
+        </div>
+    </div>
+        <!--  -->
+        <!-- storeInfo -->
+    <div class="container">
+        <div class="row storeIfor justify-content-center animated" type_animate = 'fadeUp'>
+            <div class="col-sm-3 items">
+                <span class="row justify-content-center pb-4"> 
+                    <img src="./Img/icon/wall-clock-icon.svg" class = "col-sm-5 col-4" alt="">
+                </span>
+                <h2 class="text_popin" style="--fonz: 1.8rem;">10AM - 7 PM</h2>
+                <p class="text_arial fw-light" style="--fonz: 1.8rem;">Opening Hour</p>
+            </div>
+            <div class="col-sm-3 items">
+                <span class="row justify-content-center pb-4">
+                    <img src="./Img/icon/address-icon.svg" class = "col-sm-5 col-4" alt="">
+                </span>
+                <h2 class="text_popin" style="--fonz: 1.8rem;">GEC, Chittagong</h2>
+                <p class="text_arial fw-light" style="--fonz: 1.8rem;">Address</p>
+            </div>
+            <div class="col-sm-3 items">
+                <span class="row justify-content-center pb-4"> 
+                    <img src="./Img/icon/phone-icon.svg" class = "col-sm-5 col-4" alt="">
+                </span>
+                <h2 class="text_popin" style="--fonz: 1.8rem;">+880123443</h2>
+                <p class="text_arial fw-light" style="--fonz: 1.8rem;">Call Now</p>
+            </div>
+        </div>
+    </div>
+        <!--  -->
+        <!-- Our Specials -->
+    <div class="container">
+        <div class="row ourSpecials justify-content-center animated" type_animate="fadeUp"  style="gap: 2rem;">
+            <div class="col-md-7">
+                <div class="row" style="gap: 2rem;">
+                    <div class="items col p-4">
+                        <div class="img">
+                            <img src="./Img/food/food-3.png" alt="">
+                        </div>
+                        <h2 class="text_popin fw-bolder pb-3" style="--fonz: 2.4rem;">Sweet Potato Fries Bowl</h2>
+                        <h3 class="text_popin pb-2" style="--fonz: 1.8rem; color: var(--green-1);">$18</h3>
+                        <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                        <p class="text_arial" style="--fonz: 1.8rem;">These Sweet Potato Fries bowl are a glorious, messy plate of goodness. Crispy sweet potato fries loaded with lots of fresh summer vegetables and a lime ranch. By adding a seasoning blend with chipotle powder, garlic, and onion, these spicy sweet potato fries are full of flavor.</p>
+                    </div>
+                    <div class="items col p-4">
+                        <div class="img">
+                            <img src="./Img/food/food-1.png" alt="">
+                        </div>
+                        <h2 class="text_popin fw-bolder pb-3" style="--fonz: 2.4rem;">Vegan Salad bowl</h2>
+                        <h3 class="text_popin pb-2" style="--fonz: 1.8rem; color: var(--green-1);">$18</h3>
+                        <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                        <p class="text_arial" style="--fonz: 1.8rem;">Vegan salad bowl are immensely satisfying with any combination of whole grains, pulses, noodles, raw or cooked fruits, and veggies all topped off with a delicious sauce or dressing – each bite is an explosion of flavors and textures.</p>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h1 class="text_popin fw-bold pb-3 pt-3 pt-md-0" style="--fonz: 3.6rem;">Our Specials</h1>
+                <p class="text_arial pb-3 " style="--fonz: 1.8rem;">All of our food is prepared daily at our restaurants to ensure the highest quality, freshest meals are delivered to our customers</p>
+                <span>
+                    <a href="" class="text_popin btn_" style="--fonz: 2rem;">Book Table</a>    
+                </span>
+            </div>
+        </div>
+    </div>
+        <!--  -->
 
+        <!-- Top dishes -->
+    <div class="container topDishes">
+            <h1 class="text_popin fw-bold animated" type_animate ='fadeLeft' style="--fonz: 3.6rem;">Top Dishes</h1>
+            <div class="row  gx-md-5 gy-5 pt-3 animated" type_animate = 'fadeUp'>
+                <div class="col-10 col-md col-lg-6 col-xl-4 offset-1 offset-md-0">
+                    <div class="row items">
+                        <span class="col-5 col-md-12 col-lg-5" ><img src="./Img/food/food-1.png" alt="" class="col-12 rounded-3" ></span>
+                        <div class= "col-7 col-md-12 col-lg-7">
+                            <h2 class="text_popin" style="--fonz: 2.4rem;">Vegan Salad bowl</h2>
+                            <h2 class="text_popin" style="--fonz: 2rem; color: var(--green-1);">$12</h2>
+                            <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md col-lg-6 col-xl-4 offset-1 offset-md-0">
+                    <div class="row items">
+                        <span class="col-5 col-md-12 col-lg-5" ><img src="./Img/food/food-2.png" alt="" class="col-12 rounded-3" ></span>
+                        <div class= "col-7 col-md-12 col-lg-7">
+                            <h2 class="text_popin" style="--fonz: 2.4rem;">Vegan Pesto Zoodlesl</h2>
+                            <h2 class="text_popin" style="--fonz: 2rem; color: var(--green-1);">$12</h2>
+                            <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md col-lg-6 col-xl-4 offset-1 offset-md-0">
+                    <div class="row items">
+                        <span class="col-5 col-md-12 col-lg-5" ><img src="./Img/food/food-7.png" alt="" class="col-12 rounded-3" ></span>
+                        <div class= "col-7 col-md-12 col-lg-7">
+                            <h2 class="text_popin" style="--fonz: 2.4rem;">Hot Green Bowl </h2>
+                            <h2 class="text_popin" style="--fonz: 2rem; color: var(--green-1);">$12</h2>
+                            <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+        <!--  -->
+        <!-- Discount -->
+    <div class="container">
+        <div class="row discount">
+            <div class="col-12 discount_wrap animated" type_animate = "fadeUp">
+                <div class=" p-5 row gx-md-5">
+                    <div class="discount_img col-12 col-md-8">
+                        <div class="row">
+                            <span class="col" style="height: 35rem; max-height: 35rem;"><img src="./Img/food/food-5.png" class="rounded-3 " alt=""></span>
+                            <span class="col" style="height: 35rem; max-height: 35rem;"><img src="./Img/food/food-4.png" class="rounded-3 " alt=""></span>
+                            <span class="col d-none d-lg-block" style="height: 35rem; max-height: 35rem;"><img src="./Img/food/food-3.png" class="rounded-3" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h1 class="text_popin pt-4 pt-md-0 fw-bold" style="--fonz: 2.4rem; color: var(--green-1);">20% OFF</h1>
+                        <h1 class="text_popin fw-bolder" style="--fonz: 3.6rem;">Demo Dish For Discount</h1>
+                        <h2 class="text_popin" style="--fonz: 2.4rem; color: var(--green-1);"> 
+                            <span class="text-decoration-line-through pe-3" style="color: var(--black-1);">$45 </span>
+                            $35</h2>
+                        <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                        <div class="pt-4">
+                            <a href="" class="text_popin btn_" style="--fonz: 2rem;">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--  -->
+        <!-- event -->
+    <div class="container">
+        <div class="row event justify-content-between animated" type_animate="fadeUp">
+            <div class="col-8">
+                <span class="event1">
+                    <img src="./Img/event/eventsmedia1.png" class = "col-12" alt="" >
+                    <img src="./Img/icon/playicon.svg" alt="" >
+                </span>
+                
+            </div>
+            <div class="col-4">
+                <img src="./Img/event/eventsmedia2.png" class="col-12" alt="">
+            </div>
+        </div>
+    </div>
+        <!--  -->
 
-        
+        <!-- Book Event  -->
+    <div class="container">
+        <div class="bookevent row" style="gap: 2rem;">
+            <div class="col-md col-12 animated" type_animate="fadeLeft">
+                <div class="row p-4 items mb-4">
+                    <span class="col-5">
+                        <img src="./Img/event/event-corporate.png" class="rounded-3" alt="">
+                    </span>
+                    <span class="col-7">
+                        <h3 class="text_popin" style="--fonz: 2rem;">Corporate Events</h3>
+                        <p class="text_arial" style="--fonz: 1.6rem;">Shaif's Cuisine is the perfect venue for your corporate events. We specialize in private parties.</p>
+                    </span>
+                </div>
+                <div class="row p-4 items">
+                    <span class="col-5">
+                        <img src="./Img/event/event-weedings.png" class="rounded-3" alt="">
+                    </span>
+                    <span class="col-7">
+                        <h3 class="text_popin" style="--fonz: 2rem;">Weddings</h3>
+                        <p class="text_arial" style="--fonz: 1.6rem;">Shaif's Cuisine offers an intimately unique wedding experience set in a spectacular setting that is sophisticated and comfortable.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md col-12 animated" type_animate="fadeRight">
+                <h1 class="text_popin fw-bold pb-3 pt-3 " style="--fonz: 3.6rem;">Book For Events</h1>
+                <p class="text_arial pb-3 " style="--fonz: 1.8rem;">Book your private event or corporate function at Shaif's cuisine to experience a truly unique experience.</p>
+                <span>
+                    <a href="" class="text_popin btn_" style="--fonz: 2rem;">Contact Now</a>    
+                </span>
+            </div>
+        </div>
+    </div>
+        <!--  -->
+
+        <!-- Our Food -->
+    <div class="container">
+        <div class="row ourFood justify-content-evenly">
+            <div class="col-md-6 d-flex align-items-center justify-content-center animated" type_animate="fadeRight">
+                <div class="row ">
+                    <h1 class="text_popin mb-3" style="--fonz: 3.6rem;">Why Choose Our Food</h1>
+                    <p class="text_arial" style="--fonz: 1.8rem">Quality of Service, Food, Ambiance, and Value of Money are the primary elements for choosing a restaurant. Shaif's Cuisine is one of the most exquisite fine-dinning restaurant in Chittagong cities with a captivating view of GEC Hills, perfect ambiance, and scrumptious food.</p>
+                </div>
+            </div>
+            <div class="col-md-5 animated" type_animate="fadeLeft" style="--animated-duration: 0.75s;">
+                <div class="row justify-content-center" style="gap: 1.5rem;">
+                    <div class="col-5 items text-center p-4">
+                        <img src="./Img/icon/whyus-icon1.svg" class="w-50 h-auto pb-3" alt="">
+                        <h2 class="text_popin" style="--fonz: 1.8rem">Quality Food</h2>
+                    </div>
+                    <div class="col-5 items text-center  p-4">
+                        <img src="./Img/icon/whyus-icon2.svg" class="w-50 h-auto pb-3" alt="">
+                        <h2 class="text_popin" style="--fonz: 1.8rem">Classical taste</h2>
+                    </div>
+                    <div class="col-5 items text-center  p-4">
+                        <img src="./Img/icon/whyus-icon3.svg" class="w-50 h-auto pb-3" alt="">
+                        <h2 class="text_popin" style="--fonz: 1.8rem">Skilled chef</h2>
+                    </div>
+                    <div class="col-5 items text-center  p-4">
+                        <img src="./Img/Icon/whyus-icon4.svg" class="w-50 h-auto pb-3" alt="">
+                        <h2 class="text_popin" style="--fonz: 1.8rem">Best service</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--  -->
+
+        <!-- Customers -->
+    <div class="container">
+        <div class="customers container">
+            <h1 class="text_popin text-center pb-5 animated" type_animate="fadeRight" style="--fonz: 3.6rem;">What Our Customers Say</h1>
+            <div class="col-12 animated" type_animate="fadeUp">
+                <div class="row justify-content-center" style="gap: 2rem;">
+                    <div class="col-12 col-md-5 items p-4">
+                        <div class="row">
+                            <span class="col-5"><img src="./Img/testimonial_img1.png" class="col-12 rounded-3" alt=""></span>
+                            <div class="col-7">
+                                <h2 class="text_popin" style="--fonz: 2rem">Sayed Ahmed</h2>
+                                <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                                <p class="text_arial" style="--fonz: 1.6rem;">“Visited Shaif’s Cuisine with friends last Sunday. Really lovely meal and very warm welcome – we would recommend this lovely restaurant and will try to go back again”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 items p-4">
+                        <div class="row">
+                            <span class="col-5"><img src="./Img/testimonial_img1.png" class="col-12 rounded-3" alt=""></span>
+                            <div class="col-7">
+                                <h2 class="text_popin" style="--fonz: 2rem">Sayed Ahmed</h2>
+                                <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                                <p class="text_arial" style="--fonz: 1.6rem;">“Visited Shaif’s Cuisine with friends last Sunday. Really lovely meal and very warm welcome – we would recommend this lovely restaurant and will try to go back again”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 items p-4">
+                        <div class="row">
+                            <span class="col-5"><img src="./Img/testimonial_img1.png" class="col-12 rounded-3" alt=""></span>
+                            <div class="col-7">
+                                <h2 class="text_popin" style="--fonz: 2rem">Sayed Ahmed</h2>
+                                <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                                <p class="text_arial" style="--fonz: 1.6rem;">“Visited Shaif’s Cuisine with friends last Sunday. Really lovely meal and very warm welcome – we would recommend this lovely restaurant and will try to go back again”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 items p-4">
+                        <div class="row">
+                            <span class="col-5"><img src="./Img/testimonial_img1.png" class="col-12 rounded-3" alt=""></span>
+                            <div class="col-7">
+                                <h2 class="text_popin" style="--fonz: 2rem">Sayed Ahmed</h2>
+                                <img src="./Img/3star.png" class="pb-3" alt="" style="width:40%; height: auto;">
+                                <p class="text_arial" style="--fonz: 1.6rem;">“Visited Shaif’s Cuisine with friends last Sunday. Really lovely meal and very warm welcome – we would recommend this lovely restaurant and will try to go back again”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--  -->
+
+        <!-- newsletter -->
+    <div class="container">
+        <div class="newsletter container animated" type_animate="scaleUp">
+            <div class="row newsletter_wrap">
+                <div class="col-12 col-md items">
+                    <h1 class="text_popin" style="--fonz: 3.6rem;">Join Newsletter</h1>
+                    <p class="text_arial" style="--fonz: 1.8rem;">Get notified with the latest news and recent offers from the “Shaif’s Cuisine”</p>
+                </div>
+                <div class="col-12 col-md items d-flex justify-content-center align-items-center">
+                    <input class="text_arial" style="--fonz: 1.8rem;" type="email" placeholder="Your Email Address">
+                    <button class="btn_ text_arial" style="--fonz: 1.8rem;" >Join</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nut Comehome -->
+    <div class="comehome fs-1 text-center hide">
+        <a href="#home"><i class="fas fa-chevron-up"></i></a>
     </div>
      <!-- footer -->
     <div class="footer container-fluid">
         <div class="container">
             <div class="row footer_wrap">
                 <div class="col-md-4">
-                    <span class="row"><img src="./img/icon/logo.svg" class = "col-md-7 col-4" alt=""></span>
+                    <span class="row"><img src="./Img/icon/logo.svg" class = "col-md-7 col-4" alt=""></span>
                     <p class="text_arial" style="--fonz: 1.8rem; margin: 1rem 2rem 2rem 0;">Fresh and delicious traditional Bangladeshi food to delight the whole family.</p>
                     <h3 class="text_popin" style="--fonz: 2rem;">Follow us</h3>
                     <a href="" class="icons"><i class="fab fa-facebook"></i></a>
@@ -70,5 +388,6 @@
         </div>
     </div>
     <p class="container-md text_popin" style="--fonz: 1.8rem; padding: 1.2rem 0;">© copyright 2022 Shaif’s Cuisine | By team 9</p>
+    <script src="./JavaScript/app.js"></script>
 </body>
 </html>
