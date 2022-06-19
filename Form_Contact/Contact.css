@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,100;1,300;1,400&display=swap');
+
+:root {
+    --green-1: #26643b;
+    --green-2: #a2de96;
+    --lightGreen-1: #d6e5d8;
+    --lightGreen-2: #f5fcf4;
+    --black-1: #3b413a;
+    --black-2: #3f3c3c;
+    --black-3: #5b6359;
+    --white-1: #e8e8e8;
+}
+/* *{
+    background-color: var(--lightGreen-2);
+} */
+body{
+    background-color: var(--lightGreen-2);
+}
+.text-navbar {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.text-navbar:hover{
+    color: var(--green-1);
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+.button-table {
+    padding-left: 20px;
+}
+.btn{
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--green-1);
+    color: var(--white-1);
+    padding: 0.4rem 1.4rem;
+}
+.logo1{
+    height: 100px;
+    width: 100px;
+}
+.logo{
+    width: 50%;
+    height: auto;
+}
+.formain {
+    justify-content: center;
+    gap: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-contact {
+    min-width: 200px;
+    min-height: 200px;
+    align-items: center;
+    background-color: var(--lightGreen-1);
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 0;
+    margin: 12px ;
+}
+.center{
+    padding: 50px 0;
+    
+}
+.form-label{
+    font-size: 20px;
+    color: var(--black-2);
+    font-family: Poppins;
+    font-weight: 500;
+}
+.form-control{
+    height: 60px;
+    background-color: var(--lightGreen-1) !important;
+    font-size: 22px;
+    font-weight:500;
+}
+.btn{
+    width: 150px;
+}
+h1{
+    font-weight: bold;
+}
+.footer {
+    /* height: 100px; */
+    padding: 5rem 0 4rem;
+    background-color:var(--lightGreen-1) ;
+}
+.footer h3 {
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+}
+.footer .icons {
+    padding: .5rem 1rem;
+    color: var(--black-3);
+    font-size: 2.6rem;
+    margin-right: 1rem;
+    border: 1px solid var(--green-2);
+    background: var(--white-1);
+    border-radius: 2rem;
+}
+.footer_wrap {
+    gap: 1.5rem;
+}
+.footer .links {
+    --fonz: 1.8rem;
+    display: block;
+    color: var(--black-2);
+    padding-bottom: 1rem;
+}
+.links{
+    font-family: Raleway;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black-2);
+}
+.text-bold{
+    font-weight:500;
+}
+.text-icon{
+    font-weight: 500;
+}
+.btn_send:hover{
+    background-color: var(--green-1);
+}
+.form-control:hover{
+    color-scheme: var(--green-2);
+}
