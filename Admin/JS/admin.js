@@ -4,7 +4,7 @@ var listChucNang = document.querySelector('.list_chucNang');
 nav.onclick = () => {
   listChucNang.classList.toggle('open');
 }
-console.log(localStorage.Islogin)
+
 if(localStorage.Islogin === 'false') {
   window.location = './../Form_Login/Login.html'
 }
