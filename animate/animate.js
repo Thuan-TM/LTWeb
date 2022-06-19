@@ -7,7 +7,7 @@ window.onload = ()=>{
                 e.target.classList.remove('active')
             }
         })
-    },)
+    })
 
     animateds.forEach(animate =>{
         observer.observe(animate)
