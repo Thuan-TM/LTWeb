@@ -151,3 +151,10 @@
         padding-bottom: 50px;
     }
 }
+
+@media (max-width: 575px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
