@@ -7,6 +7,10 @@ ul {
     list-style-type: none;
     padding: 0 1rem;
 }
+body {
+    display: flex;
+    flex-direction: column;
+}
 main {
     background-color: #f0f5f8;
 }
@@ -146,6 +150,7 @@ a {
 }
 
 /* Design phần content bên phải */
+
 .path {
     padding: 0.5rem;
     background-color: #fff;
@@ -200,20 +205,27 @@ a {
     color: #d2354c;
 }
 
-
+.title_endPage {
+    background-color: #222;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
 /* Responsive */
 
-@media screen and (max-width:740px){
+@media screen and (max-width:768px){
     .dashboard_item {
         border: none;
     }
     .admin_icon i:last-child {
         display: inline-block;
     }
-
 }
-@media screen and (min-width:740px) {
+@media screen and (min-width:768px) {
     .open {
         display: block;
+    }
+    .content_right {
+        height: 90vh;
     }
 }
