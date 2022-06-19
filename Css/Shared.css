@@ -43,7 +43,7 @@ a,i {
     font-size: var(--fonz);
     color: var(--black-2);
 }
-a.btn_ {
+a.btn_, .btn_ {
     padding: 1.2rem 2rem;
     color:var(--white-1) !important;
     background-color: var(--green-1);
@@ -68,7 +68,9 @@ img {
 .navbar i {
     font-size: 3rem !important;
 }
-
+.navbar-brand {
+    transform: scale(1.1);
+}
 .nav-item a {
     color: var(--black-2);
 }

@@ -47,6 +47,7 @@ body{
     height: auto;
 }
 .formain {
+    padding: 100px 0;
     justify-content: center;
     gap: 2;
     display: flex;
@@ -74,9 +75,13 @@ body{
 }
 .form-control{
     height: 60px;
-    background-color: var(--lightGreen-1);
+    background-color: var(--lightGreen-1) !important;
     font-size: 22px;
     font-weight:500;
+}
+
+.image-contact img{
+    width: auto;
 }
 .btn{
     width: 150px;
@@ -84,54 +89,34 @@ body{
 h1{
     font-weight: bold;
 }
-.footer {
-    /* height: 100px; */
-    padding: 5rem 0 4rem;
-    background-color:var(--lightGreen-1) ;
-}
-.footer h3 {
-    padding-bottom: 1.5rem;
-    font-weight: 600;
-}
-.footer .icons {
-    padding: .5rem 1rem;
-    color: var(--black-3);
-    font-size: 2.6rem;
-    margin-right: 1rem;
-    border: 1px solid var(--green-2);
-    background: var(--white-1);
-    border-radius: 2rem;
-}
-.footer_wrap {
-    gap: 1.5rem;
-}
-.footer .links {
-    --fonz: 1.8rem;
-    display: block;
-    color: var(--black-2);
-    padding-bottom: 1rem;
-}
-/* @media screen and (max-width: 575px ){
-    html {
-        font-size: 31.25%;
-    }
-}
-@media screen and (max-width: 767px) {
-    html {
-        font-size:60%;
-    }
-} */
-
-.links{
-    font-family: Raleway;
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--black-2);
-}
 
 .text-bold{
     font-weight:500;
 }
+.title-contact {
+    font-size: 24px;
+}
+.text-contact {
+    font-size: 20px;
+}
 .text-icon{
     font-weight: 500;
+}
+.btn_send:hover{
+    background-color: var(--green-1);
+}
+.form-control:hover{
+    color-scheme: var(--green-2);
+}
+@media (max-width: 767px) {
+    .formain{
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
