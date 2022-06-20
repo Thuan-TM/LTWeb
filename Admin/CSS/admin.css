@@ -134,7 +134,6 @@ a {
 }
 .item_chucNang {
     display: flex;
-    
     border-bottom: 1px solid #333; 
 }
 .item {
@@ -227,8 +226,8 @@ a {
     padding: 0.5rem 1rem;
     margin: 0;
 }
-/* Responsive */
 
+/* Responsive */
 @media screen and (max-width:768px){
     .dashboard_item {
         border: none;
