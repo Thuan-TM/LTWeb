@@ -4,6 +4,8 @@ var listChucNang = document.querySelector('.list_chucNang');
 nav.onclick = () => {
   listChucNang.classList.toggle('open');
 }
+
+
 const Islogin = localStorage.Islogin || false
 console.log(Islogin)
 if(Islogin === 'false') {
