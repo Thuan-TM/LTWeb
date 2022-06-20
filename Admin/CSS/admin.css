@@ -134,11 +134,14 @@ a {
 }
 .item_chucNang {
     display: flex;
-    padding: 1.5rem 0;
     border-bottom: 1px solid #333; 
 }
+.item {
+    width: 100%;
+    padding: 1.5rem 0;
+}
 
-.icon_chucNang i {
+.item_chucNang i {
     font-size: 2rem;
     padding: 0 0.5rem;
     color: var(--lightBlue-2);
@@ -223,8 +226,8 @@ a {
     padding: 0.5rem 1rem;
     margin: 0;
 }
-/* Responsive */
 
+/* Responsive */
 @media screen and (max-width:768px){
     .dashboard_item {
         border: none;
