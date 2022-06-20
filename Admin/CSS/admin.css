@@ -3,6 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --lightBlue-0: #d0e6fb;
+    --lightBlue-1: #1e90ff;
+    --lightBlue-2: #2da6fe;
+    --lightBlue-3: #3396cc;
+    --lightBlue-4: #12bea8;
+    --violet-1: #47395c;
+    --lightGray: #f0f5f8;
+    --origin: #e3b34b;
+    --red: #d2354c;
+}
 ul {
     list-style-type: none;
     padding: 0 1rem;
@@ -12,7 +24,7 @@ body {
     flex-direction: column;
 }
 main {
-    background-color: #f0f5f8;
+    background-color: var(--lightGray);
 }
 a {
     text-decoration: none;
@@ -21,7 +33,7 @@ a {
 
 /* Header page */
 .admin_content {
-    background: linear-gradient(to right, #47395c, #3396cc);
+    background: linear-gradient(to right, var(--violet-1), var(--lightBlue-3));
     padding: 1rem;
 }
 .admin_title {
@@ -129,21 +141,21 @@ a {
 .icon_chucNang i {
     font-size: 2rem;
     padding: 0 0.5rem;
-    color: #1e90ff;
+    color: var(--lightBlue-2);
 }
 .item_chucNang a {
     font-size: 1.2rem;
-    color: #1e90ff;
+    color: var(--lightBlue-2);
 }
 .item_chucNang:hover {
     cursor: pointer;
-    background-color: #2da6fe;
+    background-color: var(--lightBlue-2);
 }
 .item_chucNang:hover a, .item_chucNang:hover i{
     color: #fff;
 }
 .active {
-    background-color: #2da6fe;
+    background-color: var(--lightBlue-2);
 }
 .active i, .active a {
     color: #fff;
@@ -162,7 +174,7 @@ a {
 }
 .homePage_title p{
     padding: 2rem;
-    background-color: #d0e6fb;
+    background-color: var(--lightBlue-0);
     font-size: 2rem;
 }
 .dashboard {
@@ -191,18 +203,18 @@ a {
 }
 
 .new_orders i {
-    color: #2da6fe;
+    color: var(--lightBlue-2);
 }
 
 .comments i {
-    color: #e3b34b;
+    color: var(--origin);
 }
 .new_users i {
-    color: #12bea8;
+    color: var(--lightBlue-4);
 }
 
 .amount_search i {
-    color: #d2354c;
+    color: var(--red);
 }
 
 .title_endPage {

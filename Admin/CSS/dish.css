@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-
+:root {
+    --lightGreen: #75ce4c;
+    --lightBlue-5: #3eccc0;
+    --lightBlue-6: #89ecec;
+    --lightBlue-7: #bdf7f3;
+    --red: #fb6c5c;
+}
 th, td {
     text-align: left;
     padding: 1.5rem;
@@ -19,14 +25,14 @@ tr:nth-child(even) {
 .add_dish {
     color: #fff;
     border-radius: 5px;
-    background-color: #75ce4c;
+    background-color: var(--lightGreen);
     width: 11rem;
     padding: 0.8rem;
     font-size: 1.1rem;
 }
 
 .search_dish button {
-    background-color: #3eccc0;
+    background-color: var(--lightBlue-5);
     color: #fff;
     border-radius: 5px;
     border: none;
@@ -64,7 +70,7 @@ tr:nth-child(even) {
 }
 
 .row_dish {
-    background-color: #bdf7f3;
+    background-color: var(--lightBlue-7);
 }
 .dish_item-manipulation i {
     font-size: 1.2rem;
@@ -74,13 +80,13 @@ tr:nth-child(even) {
     color: #fff;
 }
 .dish_item-manipulation i:first-child {
-    background-color: #75ce4c;
+    background-color: var(--lightGreen);
 }
 .dish_item-manipulation i:nth-child(2) {
-    background-color: #3eccc0;
+    background-color: var(--lightBlue-5);
 }
 .dish_item-manipulation i:last-child {
-    background-color: #fb6c5c;
+    background-color: var(--red);
 }
 
 .dish_item-manipulation i:hover {
@@ -89,7 +95,7 @@ tr:nth-child(even) {
 }
 
 .dish_item:hover {
-    background-color: #89ecec;
+    background-color: var(--lightBlue-6);
 }
 
 .table_dish {
