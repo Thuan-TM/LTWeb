@@ -6,7 +6,7 @@ nav.onclick = () => {
 }
 
 
-const Islogin = localStorage.Islogin || false
+const Islogin = localStorage.Islogin || 'false'
 console.log(Islogin)
 if(Islogin === 'false') {
   window.location = './../Form_Login/Login.html'
