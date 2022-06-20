@@ -134,11 +134,15 @@ a {
 }
 .item_chucNang {
     display: flex;
-    padding: 1.5rem 0;
+    
     border-bottom: 1px solid #333; 
 }
+.item {
+    width: 100%;
+    padding: 1.5rem 0;
+}
 
-.icon_chucNang i {
+.item_chucNang i {
     font-size: 2rem;
     padding: 0 0.5rem;
     color: var(--lightBlue-2);
