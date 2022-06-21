@@ -22,6 +22,42 @@
     <link rel="stylesheet" href="./CSS/admin.css" />
   </head>
   <body>
+    <!-- Design navbar ẩn -->
+    <div class="main-model"></div>
+    <nav class="menu-aside">
+      <ul class="nav_list_chucNang">
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+        </div>
+        <li class="item_chucNang active">
+          <a class="item" href="./admin.html">
+            <i class="fa-solid fa-house-user"></i>
+            Home page</a>
+        </li>
+        <li class="item_chucNang">
+          <a class="item" href="./dish.html">
+            <i class="fa-solid fa-list"></i>
+            Dish</a>
+        </li>
+        <li class="item_chucNang">
+          <a class="item" href="#">
+            <i class="fa-solid fa-user-check"></i>
+            Client</a>
+        </li>
+        <li class="item_chucNang">
+          <a class="item" href="#">
+            <i class="fa-solid fa-receipt"></i>
+            Statistical</a>
+        </li>
+        <li class="item_chucNang Logout">
+          <a class="item" href="../Form_Login/Login.html">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Logout</a>
+        </li>
+      </ul>
+    </nav>
+<!-- End design navbar -->
+
     <!-- Header page -->
     <header>
       <div class="container-fluid">
@@ -30,7 +66,7 @@
           <div class="admin_icon">
             <i class="fa-solid fa-envelope"></i>
             <i class="fa-solid fa-bell"></i>
-            <i id="nav" class="fa-solid fa-bars"></i>
+            <i id="navToggler" class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
