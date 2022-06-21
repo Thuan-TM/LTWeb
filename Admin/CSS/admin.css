@@ -190,7 +190,7 @@ a {
     padding: 0 0.5rem;
     color: var(--lightBlue-2);
 }
-.item_chucNang a {
+.item_chucNang a,.item_chucNang span {
     font-size: 1.2rem;
     color: var(--lightBlue-2);
 }
@@ -198,7 +198,7 @@ a {
     cursor: pointer;
     background-color: var(--lightBlue-2);
 }
-.item_chucNang:hover a, .item_chucNang:hover i{
+.item_chucNang:hover a, .item_chucNang:hover i ,.item_chucNang:hover span {
     color: #fff;
 }
 .active {

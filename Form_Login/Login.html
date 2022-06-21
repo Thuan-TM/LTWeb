@@ -65,11 +65,11 @@
         const passWord =  document.getElementById('inputpassword')
         function checkLogin() {
             if(userName.value == "Admin" && passWord.value == "Team9"){
-                localStorage.setItem('Islogin',true)
+                localStorage.setItem('Islogin','true')
                 return true
             }
             else {
-                localStorage.setItem('Islogin',false)
+                localStorage.setItem('Islogin','false')
                 return false
             }
         }

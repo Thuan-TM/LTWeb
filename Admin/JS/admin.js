@@ -18,14 +18,18 @@ navToggler.addEventListener("click", (e)=> {
 })
 
 const Islogin = localStorage.Islogin || 'false'
-console.log(Islogin)
-if(Islogin === 'false') {
+
+if(Islogin == 'false') {
   window.location = './../Form_Login/Login.html'
 }
 
 //  dang suat
-
-const logOut = document.querySelector('.Logout')
-logOut.onclick = ()=> {
-  localStorage.setItem('Islogin',false)
-}
+const logOut = document.querySelectorAll('.Logout')
+logOut.forEach(e=> {
+  e.onclick = ()=> {
+    localStorage.setItem('Islogin','false')
+    window.location = './../Form_Login/Login.html'
+  
+  }
+  
+})
