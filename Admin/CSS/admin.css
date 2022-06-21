@@ -33,6 +33,7 @@ body {
     transition: all 0.3s linear;
     background-color: #fff;
     z-index: 4;
+    height: 100%;
 }
 
 .main-model {
