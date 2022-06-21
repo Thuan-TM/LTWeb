@@ -22,6 +22,36 @@ ul {
 body {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.menu-aside {
+    position: fixed;
+    top: 0;
+    left: -14rem;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+    background-color: #fff;
+    z-index: 4;
+}
+
+.main-model {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+    display: block;
+}
+
+.show-model {
+    visibility: visible;
+    opacity: 1;
 }
 main {
     background-color: var(--lightGray);
@@ -29,6 +59,10 @@ main {
 a {
     text-decoration: none;
     color: #000;
+}
+.nav_list_chucNang {
+    margin: 0;
+    overflow: hidden;
 }
 
 /* Header page */
@@ -60,8 +94,13 @@ a {
 .admin_icon i:last-child {
     padding: 0.7rem 0.8rem;
     display: none;
+    position: relative;
+    z-index: 4;
 }
-
+.show-icon {
+    color: #fff !important;
+    background-color: var(--lightBlue-1) !important;
+}
 .admin_content {
     display: flex;
     justify-content: space-between;
@@ -73,13 +112,14 @@ a {
 }
 
 .open {
-    display: none;
+    transform: translateX(100%);
 }
 
 /* Content */
 /* Design phần admin */
 .content_left {
     background-color: #fff;
+    height: 100%;
 }
 
 .page_icon {
@@ -235,6 +275,9 @@ a {
     .admin_icon i:last-child {
         display: inline-block;
     }
+    .list_chucNang {
+        display: none;
+    }
 }
 @media screen and (min-width:768px) {
     .open {
@@ -242,5 +285,12 @@ a {
     }
     .content_right {
         height: 90vh;
+    }
+    .menu-aside {
+        transform: translateX(-100%);
+    }
+    .show-model {
+        visibility: hidden;
+        opacity: 0;
     }
 }
