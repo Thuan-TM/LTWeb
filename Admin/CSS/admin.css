@@ -25,6 +25,20 @@ body {
     position: relative;
 }
 
+main {
+    background-color: var(--lightGray);
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Design phan nav ẩn */
+.nav_list_chucNang {
+    margin: 0;
+    overflow: hidden;
+}
+
 .menu-aside {
     position: fixed;
     top: 0;
@@ -54,17 +68,7 @@ body {
     visibility: visible;
     opacity: 1;
 }
-main {
-    background-color: var(--lightGray);
-}
-a {
-    text-decoration: none;
-    color: #000;
-}
-.nav_list_chucNang {
-    margin: 0;
-    overflow: hidden;
-}
+
 
 /* Header page */
 .admin_content {
@@ -120,7 +124,6 @@ a {
 /* Design phần admin */
 .content_left {
     background-color: #fff;
-    height: 100%;
 }
 
 .page_icon {
