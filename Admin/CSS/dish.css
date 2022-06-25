@@ -112,3 +112,33 @@ tr:nth-child(even) {
         margin-top: 1rem;
     }
 }
+
+/*  */
+.thongtinmonan {
+    background: #75ce4c;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%,-50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: all .5s;
+}
+.form label, .form input {
+    width: 100%;
+    padding: 5px 20px;
+}
+.form label {
+    font-size: 18px;
+
+}
+.over {
+    width: 1000vw;
+    height: 1000vh;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.3);
+    z-index: -99;
+}
+.thongtinmonan.active {
+    opacity: 1;
+    pointer-events: all;
+}
