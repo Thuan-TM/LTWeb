@@ -50,7 +50,7 @@ function monAn(ma = '',ten = '',nguoiLam = '', ngayLam = '', soLuong = '',trangT
 const data = []
 
 data.push(new monAn('01','Sweet Potato Fries Bowl','Thắng','14/6/2022','2','Còn nóng'))
-data.push(new monAn('02','Vegan Salad bowl','	Thuấn','14/6/2021','2','Đã nguội'))
+data.push(new monAn('02','Vegan Salad bowl','Thuấn','14/6/2021','2','Đã nguội'))
 data.push(new monAn('03','Sweet Potato Fries Bowl','Tâm','14/6/2020','3','Còn nóng'))
 data.push(new monAn('04','Sweet Potato Fries Bowl','Ngọc','14/6/2022','5','Còn nóng'))
 data.push(new monAn('05','Sweet Potato Fries Bowl','Hiu','14/6/2022','2','Còn nóng'))
