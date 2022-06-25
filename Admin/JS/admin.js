@@ -65,6 +65,7 @@ const save = document.querySelector('.save')
 //  xoa mon an
 function remove(index){
   data.splice(index,1)
+  showToast("Đã xóa thành công !")
   renderMonAn(data)
 }
 
@@ -145,9 +146,11 @@ addMonan.onclick = ()=> {
 function Save(index) {
   if(index === 'false'){
     data.push(getdataForm())
+    showToast("Đã thêm thành công!")
   }
   else {
     data[+index] = getdataForm()
+    showToast("Đã sửa thành công!")
   }
   renderMonAn(data)
 }
@@ -168,3 +171,18 @@ function Find(string) {
 document.querySelector('.search_dish input').onchange = (e)=>{
   renderMonAn(Find(e.target.value))
 } 
+
+// su ly thong bao
+function showToast(mess){
+  const toast = document.querySelector('.toastMess')
+  let html = `
+  <i class="fas fa-hand-point-right pe-2 text-black-50 fs-2"></i>
+    <p class="mb-0 fw-bolder ">${mess}</p>
+    `
+  toast.innerHTML = html
+  toast.classList.add('active')
+
+  setTimeout(()=>{
+    toast.classList.remove('active')
+  },2500)
+}

@@ -144,3 +144,20 @@ input {
     opacity: 1;
     pointer-events: all;
 }
+.toastMess {
+    width: auto;
+    top: 60px;
+    right: 0;
+    padding: 10px ;
+    background: #008800;
+    border-radius: 15px;
+    color: white;
+    z-index: 9999;
+    transition: all .5s;
+    transform: translateX(100%);
+    opacity: 0;
+}
+.toastMess.active{
+    transform: translateX(-10px);
+    opacity: 1;
+}
