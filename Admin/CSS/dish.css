@@ -129,7 +129,9 @@ tr:nth-child(even) {
 }
 .form label {
     font-size: 18px;
-
+}
+input {
+    outline: none;
 }
 .over {
     width: 1000vw;
